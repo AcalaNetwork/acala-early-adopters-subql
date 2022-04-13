@@ -20,6 +20,8 @@ export class Account implements Entity {
 
     public ausdMintEventsCount: number;
 
+    public dotBridgeUseCount: number;
+
 
     async save(): Promise<void>{
         let id = this.id;

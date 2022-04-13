@@ -28,3 +28,8 @@ dataSources:
           filter:
             module: loans
             method: PositionUpdated
+        - handler: handleDotBridgeEvent
+          kind: substrate/EventHandler
+          filter:
+            module: currencies
+            method: Transferred
