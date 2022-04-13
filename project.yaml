@@ -13,8 +13,8 @@ network:
     file: ./dist/chaintypes.js
 dataSources:
   - kind: substrate/Runtime
-    # startBlock: 327363 START OF PROGRAM
-    startBlock: 380835
+    # Start of program
+    startBlock: 327363
     mapping:
       file: ./dist/index.js
       handlers:
@@ -28,5 +28,3 @@ dataSources:
           filter:
             module: loans
             method: PositionUpdated
-        # - handler: callHandler
-        #   kind: substrate/CallHandler
